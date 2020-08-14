@@ -1,0 +1,52 @@
+<head>
+    <title>Ministry of Health</title>
+    <!-- CSS supporting files-->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style_form.css" />
+</head>
+<table>
+    <h6>Ministry of Health</h6>
+    <h3>COVID-19 (CORONA VIRUS)</h3>
+    <h6>Virus-Test Registration Form</h6>
+    <tr>
+        <td>
+            <!-- Data entry form-->
+            <form name="moh_form" method="POST" action="/form">
+        </td>
+    </tr>
+    <tr>
+        <td>Surname<br /><input id="surname" type="text" name="surname" /></td>
+        <td>Given name<br /><input id="gname" type="text" name="gname" /></td>
+    </tr>
+    <tr>
+        <td>Date of birth<br /><input id="dob" type="date" name="dob" /></td>
+        <td>Place of Residence<br /><input id="por" type="text" name="por" /></td>
+    </tr>
+    <tr>
+        <td>Occupation<br /><input id="occ" type="text" name="occ" /></td>
+        <td>Nationality<br /><input id="nationality" type="text" name="nationality" /></td>
+    </tr>
+    <tr>
+        <td>Male<br /><input id="male" type="radio" name="male" checked/></td>
+        <td>Female<br /><input id="female" type="radio" name="female"/></td>
+    </tr>
+    <tr>
+        <td>Category<br /><select>
+                <option value="">-- Select Category --</option>
+                <option value="Alert">Alert</option>
+                <option value="Contact">Contact</option>
+                <option value="Returnee">Returnee</option>
+                <option value="Volunteer">Volunteer</option>
+            </select></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button type="submit" onClick="validate()">Register</button></td>
+    </tr>
+    </form>
+</table>
+<!-- Javascript supporting files-->
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/popper.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="..static/js/validateForm.js"></script>
